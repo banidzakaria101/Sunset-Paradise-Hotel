@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Sunset Hotel</display-name>
+  <servlet>
+  <servlet-name>RoomSearchServlet</servlet-name>
+  <servlet-class>Servlet.RoomSearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RoomSearchServlet</servlet-name>
+  <url-pattern>/room-search</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>ReservationServlet</servlet-name>
+  <servlet-class>Servlet.ReservationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ReservationServlet</servlet-name>
+  <url-pattern>/reservation</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>AddReservationServlet</servlet-name>
+  <servlet-class>Servlet.AddReservationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AddreservationServlet</servlet-name>
+  <url-pattern>/add-reservation</url-pattern>
+  </servlet-mapping>
+</web-app>
