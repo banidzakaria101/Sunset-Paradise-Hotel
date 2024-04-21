@@ -8,7 +8,7 @@
   
   <servlet-mapping>
   <servlet-name>RoomSearchServlet</servlet-name>
-  <url-pattern>/room-search</url-pattern>
+  <url-pattern>/RoomSearch</url-pattern>
   </servlet-mapping>
   
   

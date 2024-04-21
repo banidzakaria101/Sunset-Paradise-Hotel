@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Welcome to Sunset Paradise Hotel</h1>
+    
+    <h2>Search Rooms</h2>
+    <form action="/room-search" method="get">
+        Check-In Date: <input type="date" name="checkInDate" required>
+        Check-Out Date: <input type="date" name="checkOutDate" required>
+        <input type="submit" value="Search">
+    </form>
+
+    <hr>
+
+    <h2>Make Reservation</h2>
+    <form action="/make-reservation" method="post">
+        Room ID: <input type="text" name="roomId" required>
+        Check-In Date: <input type="date" name="checkInDate" required>
+        Check-Out Date: <input type="date" name="checkOutDate" required>
+        <input type="submit" value="Reserve">
+    </form>
+
+    <hr>
+
+    <h2>Available Rooms</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Room ID</th>
+                <th>Room Type</th>
+                <th>Price</th>
+                <th>Amenities</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
